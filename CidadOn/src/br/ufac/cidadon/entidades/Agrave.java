@@ -1,7 +1,7 @@
 package br.ufac.cidadon.entidades;
 
 import javax.persistence.*;
-
+//deu certo Essa merda?
 @Entity
 @Table(name="agraves")
 @NamedQueries({
