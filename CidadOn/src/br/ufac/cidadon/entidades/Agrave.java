@@ -3,6 +3,8 @@ package br.ufac.cidadon.entidades;
 import javax.persistence.*;
 //deu certo Essa merda?
 //sim
+//mudei i target
+//mai um teste
 @Entity
 @Table(name="agraves")
 @NamedQueries({
