@@ -35,10 +35,10 @@ public class Usuario {
 	private String email;
 
 	public String getCpf() {
-		StringBuilder stringBuilder = new StringBuilder(cpf);
-		stringBuilder.insert(cpf.length() - 8, '.');
-		stringBuilder.insert(cpf.length() - 5, '.');
-		stringBuilder.insert(cpf.length() - 2, '-');
+//		StringBuilder stringBuilder = new StringBuilder(cpf);
+//		stringBuilder.insert(cpf.length() - 8, '.');
+//		stringBuilder.insert(cpf.length() - 5, '.');
+//		stringBuilder.insert(cpf.length() - 2, '-');
 		return cpf;
 	}
 	public void setCpf(String cpf) {
