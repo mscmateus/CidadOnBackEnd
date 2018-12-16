@@ -52,7 +52,9 @@ public class UsuarioRepositorio {
 		query.setParameter("termo", "%"+termo+"%");
 		return query.getResultList();
 	}
-	public List<Usuario> usrCpf(long cpf){
+	public List<Usuario> usrCpf(String cpf){
+		// mudei o parametro do metodo para string
+		cpf = cpf.replaceAll("[^0-9]", "");
 		Query query = em.createNamedQuery("Usuario.usrCpf");
 		query.setParameter("valorCpf",cpf);
 		return query.getResultList();
