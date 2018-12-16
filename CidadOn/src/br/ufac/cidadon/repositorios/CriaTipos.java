@@ -42,13 +42,13 @@ public class CriaTipos {
 								"Problemas relacionados as condições ou inexistencia da rede de esgoto. Ex: esgoto á céu aberto, boeiro vazando."};
 		int [] visibilidades = {2,3,3,2,2};
 		//Carregando imagens para os files
-		files[0] = new File("img/estruturaViaria.png");
-		files[1] = new File("img/iluminacaoPublica.png");
-		files[2] = new File("img/redeDistribuicaoAgua.png");
-		files[3] = new File("img/redeEletrica.png");
-		files[4] = new File("img/redeEsgoto.png");
+		files[0] = new File("img/estruturaViaria.svg");
+		files[1] = new File("img/iluminacaoPublica.svg");
+		files[2] = new File("img/redeDistribuicaoAgua.svg");
+		files[3] = new File("img/redeEletrica.svg");
+		files[4] = new File("img/redeEsgoto.svg");
 		//Definindo tamnho dos vetores de bytes
-		for(int i=0;i<5;i++) {
+		for(int i=1;i<5;i++) {
 			inputFile = new FileInputStream(files[i]);
 			todos[i] = new byte[(int) files[i].length()];
 			inputFile.read(todos[i]);
